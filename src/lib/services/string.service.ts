@@ -69,9 +69,11 @@ export class StringService
         }
       }
       // Если какой-то части нет, значит эта строка меньше другой иначе равны
-      else if (!!splitValue1.value) return 1;
-      else if (!!splitValue2.value) return -1;
-      else return 0;
+      else return (!!splitValue1.value)
+        ? 1
+        : (!!splitValue2.value)
+          ? -1
+          : 0;
     }
   }
 
