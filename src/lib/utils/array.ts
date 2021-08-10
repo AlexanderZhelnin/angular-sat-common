@@ -9,14 +9,3 @@ export function groupBy<T>(mas: T[], predicate: (p: T) => string): { [key: strin
     return r;
   }, Object.create(null));
 }
-
-// export function selectMany<T, K>(mas: T[], predicate: (p: T) => K[]): K[]
-// {
-//   return mas.reduce((r, a) =>
-//   {
-//     const group = predicate(a);
-//     r[predicate(a)] = group || [];
-//     r[group].push(a);
-//     return r;
-//   }, Object.create(null));
-// }

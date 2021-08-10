@@ -12,8 +12,8 @@ export * from './lib/directives/ad-host';
 export * from './lib/pipes/pipes.module';
 export * from './lib/directives/directives.module';
 
-export * from './lib/services/resize/resize-document.service';
-export * from './lib/services/svg/svg.service';
+export * from './lib/services/resize-document.service';
+export * from './lib/services/svg.service';
 
 export * from './lib/animations/animations';
 

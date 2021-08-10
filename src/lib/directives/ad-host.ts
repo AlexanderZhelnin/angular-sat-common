@@ -11,7 +11,7 @@ export class AdDirective implements IAdDirective
 @Directive({
   selector: '[ad-host1]',
 })
-export class AdDirective1 implements IAdDirective
+export class Ad1Directive implements IAdDirective
 {
   constructor(public viewContainerRef: ViewContainerRef) { }
 }
@@ -19,7 +19,7 @@ export class AdDirective1 implements IAdDirective
 @Directive({
   selector: '[ad-host2]',
 })
-export class AdDirective2 implements IAdDirective
+export class Ad2Directive implements IAdDirective
 {
   constructor(public viewContainerRef: ViewContainerRef) { }
 }
@@ -27,7 +27,7 @@ export class AdDirective2 implements IAdDirective
 @Directive({
   selector: '[ad-host3]',
 })
-export class AdDirective3 implements IAdDirective
+export class Ad3Directive implements IAdDirective
 {
   constructor(public viewContainerRef: ViewContainerRef) { }
 }
@@ -35,12 +35,12 @@ export class AdDirective3 implements IAdDirective
 @Directive({
   selector: '[ad-host4]',
 })
-export class AdDirective4 implements IAdDirective
+export class Ad4Directive implements IAdDirective
 {
   constructor(public viewContainerRef: ViewContainerRef) { }
 }
 
 export interface IAdDirective
 {
-  viewContainerRef: ViewContainerRef
+  viewContainerRef: ViewContainerRef;
 }

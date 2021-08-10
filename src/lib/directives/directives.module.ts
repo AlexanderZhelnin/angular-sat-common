@@ -1,28 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AdDirective, AdDirective1, AdDirective2, AdDirective3, AdDirective4 } from './ad-host';
+import { AdDirective, Ad1Directive, Ad2Directive, Ad3Directive, Ad4Directive } from './ad-host';
 
 @NgModule({
   declarations: [
     AdDirective,
-    AdDirective1,
-    AdDirective2,
-    AdDirective3,
-    AdDirective4,
+    Ad1Directive,
+    Ad2Directive,
+    Ad3Directive,
+    Ad4Directive,
   ],
   imports: [
     CommonModule,
     FormsModule,
-
-
   ],
   exports: [
     AdDirective,
-    AdDirective1,
-    AdDirective2,
-    AdDirective3,
-    AdDirective4,
+    Ad1Directive,
+    Ad2Directive,
+    Ad3Directive,
+    Ad4Directive,
   ],
 })
 export class DirectivesModule
