@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 
+
+
+/** Сервис для работы со строками */
 @Injectable({ providedIn: 'root' })
 export class StringService
 {
