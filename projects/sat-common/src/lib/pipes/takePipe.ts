@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 
-@Pipe({ name: 'Take' })
+@Pipe({ name: 'take' })
 export class TakePipe implements PipeTransform
 {
   constructor() { }
@@ -12,4 +12,4 @@ export class TakePipe implements PipeTransform
     for (let i = 0; i < array.length && i < count; i++)result.push(array[i]);
     return result;
   }
-} 
+}

@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 
-@Pipe({ name: 'Skip' })
+@Pipe({ name: 'skip' })
 export class SkipPipe implements PipeTransform
 {
   constructor() { }
@@ -12,4 +12,4 @@ export class SkipPipe implements PipeTransform
     for (let i = count; i < array.length; i++)result.push(array[i]);
     return result;
   }
-} 
+}
