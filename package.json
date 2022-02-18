@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "npm-run-all clear --parallel start:**",
-    "start:satAuth": "ng build sat-common --watch",
+    "start:satCommon": "ng build sat-common --watch",
     "start:app": "node ./scripts/waite-for-sat-common.js && ng serve",
     "clear": "node ./scripts/clear.js",
     "version": "cd ./projects/sat-common && npm version patch && cd ../../",
