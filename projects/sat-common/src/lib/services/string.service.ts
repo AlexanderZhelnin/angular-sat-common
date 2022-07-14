@@ -1,6 +1,22 @@
 import { Injectable } from '@angular/core';
 
+export function checkMatch(txt: string, m: string | RegExp, flags: string | undefined = undefined): RegExpMatchArray | null
+{
+  if (typeof m === 'string') m = new RegExp(m, flags);
+  return txt.match(m);
+}
 
+export function checkReplace(txt: string, m: string | RegExp, replace: string, flags: string | undefined = undefined): string
+{
+  if (typeof m === 'string') m = new RegExp(m, flags);
+  return txt.replace(m, replace);
+}
+
+export function checkTest(txt: string, m: RegExp | string, flags: string | undefined = undefined): boolean
+{
+  if (typeof m === 'string') m = new RegExp(m, flags);
+  return m.test(txt);
+}
 
 /** Сервис для работы со строками */
 @Injectable({ providedIn: 'root' })
@@ -48,6 +64,10 @@ export class StringService
   /**
    * Натуральное сравнение 2-х строк
    *
+   * ```ts
+   * compareStrings('10ff', '2ff') // => 1
+   * ```
+   *
    * @param str1 первая строка
    * @param str2 вторая строка
    */
@@ -84,6 +104,10 @@ export class StringService
   /**
    * Натуральная сортировка строк
    *
+   * ```ts
+   naturalSort(['10ff', '2ff']) // => ['2ff', '10ff']
+   * ```
+   *
    * @param strings Массив строк
    * @return Массив отсортированных строк
    */
@@ -92,6 +116,23 @@ export class StringService
     return strings.sort(this.compareStrings);
   }
 
-
   constructor() { }
+
+  public checkMatch(txt: string, m: string | RegExp, flags: string | undefined = undefined): RegExpMatchArray | null
+  {
+    if (typeof m === 'string') m = new RegExp(m, flags);
+    return txt.match(m);
+  }
+
+  public checkReplace(txt: string, m: string | RegExp, replace: string, flags: string | undefined = undefined): string
+  {
+    if (typeof m === 'string') m = new RegExp(m, flags);
+    return txt.replace(m, replace);
+  }
+
+  public checkTest(txt: string, m: RegExp | string, flags: string | undefined = undefined): boolean
+  {
+    if (typeof m === 'string') m = new RegExp(m, flags);
+    return m.test(txt);
+  }
 }

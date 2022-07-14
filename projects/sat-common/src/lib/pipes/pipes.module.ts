@@ -14,9 +14,6 @@ import { SkipPipe } from './skipPipe';
     TakePipe,
     SkipPipe,
   ],
-  entryComponents: [
-
-  ],
   imports: [
     CommonModule
   ],
