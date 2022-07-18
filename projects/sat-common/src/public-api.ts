@@ -21,5 +21,7 @@ export * from './lib/utils/array';
 export * from './lib/utils/clone';
 export * from './lib/utils/immutable';
 
+export * from './lib/forms/auto-save';
+
 
 
