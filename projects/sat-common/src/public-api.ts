@@ -14,6 +14,7 @@ export * from './lib/services/resize-document.service';
 export * from './lib/services/svg.service';
 export * from './lib/services/string.service';
 export * from './lib/services/dynamic-code.service';
+export * from './lib/services/html-helper.service';
 
 export * from './lib/animations/animations';
 

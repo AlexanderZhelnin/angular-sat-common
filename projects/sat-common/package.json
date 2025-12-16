@@ -1,6 +1,6 @@
 {
   "name": "sat-common",
-  "version": "1.0.13",
+  "version": "1.0.18",
   "license": "MIT",
   "description": "Библиотека базового функционала",
   "homepage": "https://www.youtube.com/channel/UCGntVzOD7faGCYbrUfd8PQg",
@@ -15,11 +15,6 @@
   "keywords": [
     "tools"
   ],
-  "peerDependencies": {
-    "@angular/common": "^14.0.6",
-    "@angular/core": "^14.0.6"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  }
+  "peerDependencies": {},
+  "dependencies": {}
 }
